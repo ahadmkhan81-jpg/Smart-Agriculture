@@ -1,0 +1,1139 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19/"
+     xml:base="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:agro="http://purl.obolibrary.org/obo/agro-edit.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="https://schema.org/#"
+     xmlns:schema1="http://schema.org/"
+     xmlns:untitled-ontology-19="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/hasPart">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/owns -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/owns">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/produces -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/produces">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/uses -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/uses">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectedTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectsCrop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectsCrop">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#affectedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#appliedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#appliedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#controlledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#controlledBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#controls"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#controls">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#dependsOnWeather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#dependsOnWeather">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#detectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#detectedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#detects"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#detects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#detects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#foundIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#foundIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#occursIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#grows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#grows">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#hasSoilType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#hasSoilType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#improvesGrowthOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#improvesGrowthOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#infects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#infects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#irrigates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#irrigates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#manageTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#manageTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#managedBy"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#managedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#managedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#measuresConditionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#measuresConditionOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#monitoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#monitoredBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#monitors"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#monitors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#monitors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#needsFertilizer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#needsFertilizer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#occursIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#occursIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ownedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ownedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ownsTo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ownsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ownsTo">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#plantedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#plantedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#protects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#protects">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#suitableFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#suitableFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#supportGrowthOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#supportGrowthOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#treatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#treatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#usesIrrigation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#usesIrrigation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/address -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/address">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/description -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/email -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/email">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/givenName -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/givenName">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/name -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://schema.org/telephone -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/telephone">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#accuracyLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#accuracyLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#age">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#applicationMethod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#applicationMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#experienceYears -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#experienceYears">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#fertilizerQuantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#fertilizerQuantity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#fieldSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#fieldSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#growthDurationInDays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#growthDurationInDays">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#id">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#measuredValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#measuredValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#quantityRequired -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#quantityRequired">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#rainfall -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#rainfall">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#scheduleIntervalDays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#scheduleIntervalDays">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#severityLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#severityLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#soilPH -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#soilPH">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#symptoms -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#symptoms">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#temperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#waterFlowRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#waterFlowRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/AGRO_00000372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/AGRO_00000372">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <rdfs:comment>Any farmer in agriculture</rdfs:comment>
+        <rdfs:label>Farmer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#BacterialDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#BacterialDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CanalIrrigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CanalIrrigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CashCrop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CashCrop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CerealCrop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CerealCrop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ChemicalFertilizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ChemicalFertilizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ClaySoil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ClaySoil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ColdWeather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ColdWeather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CommercialFarmer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#CommercialFarmer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#needsFertilizer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#DripIrrigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#DripIrrigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/hasPart"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#FruitCrop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#FruitCrop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#FungalDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#FungalDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#HotWeather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#HotWeather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#HumiditySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#LargeField -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#LargeField">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#LoamSoil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#LoamSoil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#MoistureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#MoistureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#OrganicFarmer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#OrganicFarmer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#OrganicFertilizer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#OrganicFertilizer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RainyWeather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RainyWeather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SandySoil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SandySoil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SiltySoil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SiltySoil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SmallField -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SmallField">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SmallholderFarmer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SmallholderFarmer">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SprinklerIrrigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SprinklerIrrigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#VegetableCrop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#VegetableCrop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ViralDisease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ViralDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#grows"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ClaySoil1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ClaySoil1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+        <untitled-ontology-19:detectedBy rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#MoistureSensor1"/>
+        <untitled-ontology-19:suitableFor rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop"/>
+        <untitled-ontology-19:soilPH rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.8</untitled-ontology-19:soilPH>
+        <untitled-ontology-19:type>Clay</untitled-ontology-19:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#DripSystem1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#DripSystem1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+        <untitled-ontology-19:irrigates rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_A"/>
+        <untitled-ontology-19:supportGrowthOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop"/>
+        <untitled-ontology-19:waterFlowRate rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</untitled-ontology-19:waterFlowRate>
+        <untitled-ontology-19:waterFlowRate rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-19:waterFlowRate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Farmer_Ahmad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Farmer_Ahmad">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+        <schema1:uses rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#UreaFertilizer"/>
+        <schema1:uses rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeedControlPro"/>
+        <untitled-ontology-19:grows rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RiceCrop"/>
+        <untitled-ontology-19:manageTo rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_B"/>
+        <untitled-ontology-19:ownsTo rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_B"/>
+        <schema1:address>khushab</schema1:address>
+        <schema1:email>ahmadkhan81@gmail.com</schema1:email>
+        <schema1:givenName>Ahmad Raza Mir</schema1:givenName>
+        <schema1:telephone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03456753727</schema1:telephone>
+        <untitled-ontology-19:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</untitled-ontology-19:age>
+        <untitled-ontology-19:experienceYears rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-19:experienceYears>
+        <untitled-ontology-19:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</untitled-ontology-19:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Farmer_Ali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Farmer_Ali">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/AGRO_00000372"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+        <schema1:hasPart rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ClaySoil1"/>
+        <untitled-ontology-19:monitoredBy rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#MoistureSensor1"/>
+        <untitled-ontology-19:treatedWith rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#InsectKillX"/>
+        <untitled-ontology-19:usesIrrigation rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#DripSystem1"/>
+        <schema1:address>sargodha</schema1:address>
+        <schema1:name>Field_A</schema1:name>
+        <untitled-ontology-19:fieldSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.5</untitled-ontology-19:fieldSize>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#HotWeather2026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#HotWeather2026">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+        <untitled-ontology-19:affectedTo rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop"/>
+        <untitled-ontology-19:rainfall rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</untitled-ontology-19:rainfall>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#InsectKillX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#InsectKillX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+        <untitled-ontology-19:appliedTo rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_A"/>
+        <untitled-ontology-19:controls rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RustDisease"/>
+        <untitled-ontology-19:protects rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop"/>
+        <schema1:description>control insects in crops</schema1:description>
+        <schema1:name>InsectKillX</schema1:name>
+        <untitled-ontology-19:applicationMethod>Spray</untitled-ontology-19:applicationMethod>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#LeafBlight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#LeafBlight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#MoistureSensor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#MoistureSensor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+        <untitled-ontology-19:detects rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#ClaySoil1"/>
+        <untitled-ontology-19:measuresConditionOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop"/>
+        <untitled-ontology-19:monitors rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_A"/>
+        <untitled-ontology-19:accuracyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95.0</untitled-ontology-19:accuracyLevel>
+        <untitled-ontology-19:id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">101</untitled-ontology-19:id>
+        <untitled-ontology-19:measuredValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">68.6</untitled-ontology-19:measuredValue>
+        <untitled-ontology-19:type>Moisture sensor</untitled-ontology-19:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#NPKFertilizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#NPKFertilizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RainyWeather2026 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RainyWeather2026">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeatherCondition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RiceCrop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RiceCrop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+        <untitled-ontology-19:affectedBy rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#HotWeather2026"/>
+        <untitled-ontology-19:affectedBy rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RustDisease"/>
+        <untitled-ontology-19:needsFertilizer rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#UreaFertilizer"/>
+        <untitled-ontology-19:plantedIn rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_A"/>
+        <schema1:description>Kharif Season Crop</schema1:description>
+        <schema1:name>Rice</schema1:name>
+        <untitled-ontology-19:growthDurationInDays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</untitled-ontology-19:growthDurationInDays>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RustDisease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RustDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Disease"/>
+        <untitled-ontology-19:controlledBy rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#InsectKillX"/>
+        <untitled-ontology-19:infects rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop"/>
+        <untitled-ontology-19:occursIn rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Field_A"/>
+        <schema1:name>Rust</schema1:name>
+        <untitled-ontology-19:severityLevel>Brown spots on leaves</untitled-ontology-19:severityLevel>
+        <untitled-ontology-19:severityLevel>High</untitled-ontology-19:severityLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SandySoil1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#SandySoil1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Soil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sprinkler1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sprinkler1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#IrrigationSystem"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#TemperatureSensor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#TemperatureSensor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#UreaFertilizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#UreaFertilizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
+        <untitled-ontology-19:appliedTo rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop"/>
+        <untitled-ontology-19:improvesGrowthOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#RiceCrop"/>
+        <schema1:description>Nitrogen fertilizer</schema1:description>
+        <schema1:name>Urea</schema1:name>
+        <untitled-ontology-19:applicationMethod>Spray</untitled-ontology-19:applicationMethod>
+        <untitled-ontology-19:quantityRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</untitled-ontology-19:quantityRequired>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeedControlPro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WeedControlPro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Pesticide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#WheatCrop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
