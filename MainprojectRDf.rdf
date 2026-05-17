@@ -95,6 +95,7 @@
     <!-- http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#appliedTo -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#appliedTo">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#needsFertilizer"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Fertilizer"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/orange/ontologies/2026/3/untitled-ontology-19#Crop"/>
     </owl:ObjectProperty>
